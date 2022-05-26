@@ -42,7 +42,7 @@ public class GraphDataController {
 
         log.info("sending data : {}", data);
 
-        simpMessagingTemplate.convertAndSend("/topic/greetings", data, header);
+        simpMessagingTemplate.convertAndSend("/topic/graph_data", data, header);
 
     }
 

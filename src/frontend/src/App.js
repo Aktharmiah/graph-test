@@ -15,7 +15,11 @@ function App() {
 
         mySocket.onMessage((jsonMessage, args)=>{
             console.log("Handler function executed!!!");
+
+            jsonMessage[0] = new Date(jsonMessage[0]);
+
             console.log("Message with body received.. %o", jsonMessage);
+
             setGraphData( [...graphData, jsonMessage] );
 
         });
