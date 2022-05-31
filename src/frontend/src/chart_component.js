@@ -34,7 +34,7 @@ export default (props=null)=>{
           rangeSelectorPlotFillGradientColor: "blue",
           rangeSelectorPlotStrokeColor: "rgb(2, 44, 112)",
           ylabel: props.y,
-          xlabel: props.x,
+          xlabel: props.xx,
 
         });
 
