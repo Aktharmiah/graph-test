@@ -29,7 +29,7 @@ export default class {
     connect() {
 
         this.stompClient = Stomp.over(function() {
-            return new SockJS("http://localhost:8089/ws");
+            return new SockJS("ws://localhost:8089/ws");
          });
 
         // automatic reconnect (delay in milli seconds)
