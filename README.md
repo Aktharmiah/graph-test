@@ -13,13 +13,16 @@ We are aware of a number of problems with this application which must be fixed. 
 3) Cross-origin request are being blocked.
 4) Syntax errors.
 
+Note - there may be other problems which are not noted here.
+
 ## Your task
-1) Create a sorting algorithm so that the data is displayed in chronological order. This can be as part of the backe-end or the front-end.
-2) Offer a solution to the item #2 as above
-3) Cross-origin settings needs correcting. They can be found in the `WebSocketConfig` file.
-4) Correct syntax errors.
-5) Review the code and make recommendations using comments (`//, #, /** */`)
-6) Make any improvements that you feel would make the application work better.
+1) Create a sorting algorithm so that the data is displayed in chronological order. This can be as part of the backe-end or the front-end. The data is 
+   stored in the following format: [{epochTime, floatValue}, {epochTime, floatValue}, {epochTime, floatValue}]
+3) Offer a solution to the item #2 as above
+4) Cross-origin settings needs correcting. They can be found in the `WebSocketConfig` file.
+5) Correct syntax errors.
+6) Review the code and make recommendations using comments (`//, #, /** */`)
+7) Make any improvements that you feel would make the application work better.
 
 
 ## Assumptions
