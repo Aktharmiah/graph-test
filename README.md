@@ -1,6 +1,6 @@
 # README
 
-This is a simple application, comprising of a frontend, created using HTML and Javascript and the backend, created using Java.<br />
+This is a simple application, comprising of a frontend, created using HTML and Javascript and the backend, created using Java and SpringBoot.<br />
 Its aim is to transmit simple graph data via a websocket so that it can be displayed on the frontend as live data.
 
 
