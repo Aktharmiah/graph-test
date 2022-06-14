@@ -87,3 +87,7 @@ exit /b 1
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
+
+
+/Users/anamikayadav/practice/graph-test/gradlew.bat

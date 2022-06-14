@@ -1,0 +1,12 @@
+.card-body{
+    width: 60%;
+    height: auto;
+    text-align: right;
+    background: none;
+}
+
+.card-footer{
+    width: 60%;
+    height: auto;
+    padding-top: 10px;
+}
