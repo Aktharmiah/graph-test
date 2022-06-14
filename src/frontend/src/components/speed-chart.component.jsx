@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Dygraph from "dygraphs";
+import "./speed-chart.component.css";
 
 const SpeedChart = (props = null) => {
   const dygraphCanvas = React.createRef();
   const [motorSpeedDygraph, setMotorSpeedDygraph] = useState();
 
   useEffect(() => {
-    console.log(">> chart component updated with new data.. %o", props.data);
+    // console.log(">> chart component updated with new data.. %o", props.data);
 
     if (props.data.length === 0 || dygraphCanvas === null) {
       return;
@@ -55,11 +56,7 @@ const SpeedChart = (props = null) => {
   return (
     <div>
       <div className="card mt-2">
-        <div
-          className="card-body p-0"
-          id="dual_x_div"
-          style={{ width: "60%", height: "auto" }}
-        >
+        <div className="card-body p-0" id="dual_x_div">
           {/* <style>.dygraph-legend { text-align: right; background: none; }</style> */}
 
           <div

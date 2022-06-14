@@ -10,17 +10,17 @@ function App() {
 
   useEffect(() => {
     mySocket.onMessage((jsonMessage, args) => {
-      console.log("Handler function executed!!!");
+      // console.log("Handler function executed!!!");
 
       jsonMessage[0] = new Date(jsonMessage[0] * 1000);
 
-      console.log("Message with body received.. %o", jsonMessage[0]);
+      //console.log("Message with body received.. %o", jsonMessage[0]);
 
       setGraphData([...graphData, jsonMessage]);
     });
 
     mySocket.onError((errorMessage, args) => {
-      console.log("Error handler function executed!!!");
+      //console.log("Error handler function executed!!!");
       console.log("Error message: %o", errorMessage);
     });
 
