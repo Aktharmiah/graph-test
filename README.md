@@ -18,11 +18,35 @@ Note - there may be other problems which are not noted here.
 ## Your task
 1) Create a sorting algorithm so that the data is displayed in chronological order. This can be as part of the backe-end or the front-end. The data is 
    stored in the following format: [{epochTime, floatValue}, {epochTime, floatValue}, {epochTime, floatValue}]
-3) Offer a solution to the item #2 as above
+   
+       //Sorting graphData List
+       Collections.sort(graphData, new Comparator<Object[]>() {
+
+		@Override
+		public int compare(Object[] o1, Object[] o2) {
+			int c=0;
+			for (int i = 0; i < Math.min(o1.length, o2.length); i++) {
+				c = (Integer) o2[0]- (Integer)o1[0];
+				if(c==0) {
+					double timeValue=  (Double) o2[1]- (Double)o1[1];
+					c= (int) timeValue;
+				}
+				if(c!=0) return c;
+			}
+			return 0;
+		}
+    	 }); 
+       
+    }
+   
+2) Offer a solution to the item #2 as above
 4) Cross-origin settings needs correcting. They can be found in the `WebSocketConfig` file.
 5) Correct syntax errors.
 6) Review the code and make recommendations using comments (`//, #, /** */`)
 7) Make any improvements that you feel would make the application work better.
+
+Output:
+
 
 
 ## Assumptions
